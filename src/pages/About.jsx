@@ -4,19 +4,19 @@ const About = () => {
   return (
     <div 
       style={{ 
-        minHeight: "100vh",
-        width: "100%",
-        padding: "60px",
-        background: "linear-gradient(135deg, #8399d4, #1cc88a)",
-        color: "black",
-        textAlign: "center"
-      }}
-    >
+    minHeight: "100vh",
+    width: "100%",
+    padding: "60px",
+    background: "linear-gradient(135deg, #1e3c72, #96afdb)",  
+    color: "white",
+    textAlign: "center"
+  }}
+>
       <h1>About Expense Tracking System</h1>
 
       <p style={{ fontSize: "18px", lineHeight: "1.6", maxWidth: "800px", textAlign: "center", margin: "20px auto" }}>
         The Expense Tracking & Visualization System helps users record, 
-        monitor, and analyze their daily income and expenses.
+        monitor, and analyze their daily income and expenses. 
       </p>
 
       <p style={{ fontSize: "18px", lineHeight: "1.6", maxWidth: "800px"  , textAlign: "center", margin: "20px auto" }}>

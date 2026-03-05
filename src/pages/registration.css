@@ -1,15 +1,14 @@
-/* Background & Page Layout */
 .registration-container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #4e73df, #1cc88a);
+   background: linear-gradient(135deg, #1e3c72, #2a5298);
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Card */
+
 .registration-card {
   background: #ffffff;
   width: 100%;
@@ -19,7 +18,7 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Heading */
+
 .registration-card h1 {
   text-align: center;
   margin-bottom: 25px;
@@ -27,20 +26,18 @@
   font-size: 24px;
 }
 
-/* Form Layout */
+
 .registration-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Form Group */
 .form-group {
   display: flex;
   flex-direction: column;
 }
 
-/* Labels */
 .form-group label {
   margin-bottom: 6px;
   font-weight: 600;
@@ -48,7 +45,6 @@
   font-size: 14px;
 }
 
-/* Inputs & Select */
 .form-group input,
 .form-group select {
   padding: 10px 12px;
@@ -58,7 +54,7 @@
   transition: all 0.3s ease;
 }
 
-/* Focus Effect */
+
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
@@ -66,7 +62,6 @@
   box-shadow: 0 0 5px rgba(78, 115, 223, 0.4);
 }
 
-/* Submit Button */
 .submit-btn {
   margin-top: 10px;
   padding: 12px;
@@ -80,14 +75,12 @@
   transition: all 0.3s ease;
 }
 
-/* Hover Effect */
 .submit-btn:hover {
   background: #2e59d9;
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive */
 @media (max-width: 480px) {
   .registration-card {
     padding: 20px;

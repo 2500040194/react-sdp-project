@@ -24,25 +24,24 @@ const AdminLogin = () => {
     
     const adminCredentials = JSON.parse(sessionStorage.getItem('adminCredentials'));
     
-    const defaultUsername = 'admin';
-    const defaultPassword = 'admin';
+    
+    const defaultUsername = 'klu';
+    const defaultPassword = 'klu';
     
     const validUsername = adminCredentials?.username || defaultUsername;
     const validPassword = adminCredentials?.password || defaultPassword;
     
-    if (formData.username === validUsername && formData.password === validPassword) {     
-      
+
+    if (formData.username === validUsername && formData.password === validPassword) {
       sessionStorage.setItem('isAdmin', 'true');
       sessionStorage.setItem('adminUsername', formData.username);
       sessionStorage.setItem('adminName', 'Administrator');
       console.log('Admin Login successful!');
-      
       setFormData({
         username: '',
         password: '',
       });
-      
-      window.location.href = '/';
+navigate('/admin/home')
     } else {
       setError('Invalid username or password');
       console.log('Invalid credentials');
@@ -53,9 +52,7 @@ const AdminLogin = () => {
     <div className="login-container">
       <div className="login-card">
         <h1>Admin Login</h1>
-        <p style={{ textAlign: 'center', fontSize: '12px', color: '#666', marginBottom: '15px' }}>
-          
-        </p>
+       
         {error && <div className="error-message" style={{ color: 'red', marginBottom: '10px', padding: '10px', backgroundColor: '#ffe6e6', borderRadius: '4px' }}>{error}</div>}
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">

@@ -9,8 +9,6 @@ const Registration = () => {
     email: '',
     password: '',
     username: '',
-    contactNo: '',
-    location: '',
     currency: '',
     language: '',
   });
@@ -51,8 +49,6 @@ const Registration = () => {
       email: '',
       password: '',
       username: '',
-      contactNo: '',
-      location: '',
       currency: '',
       language: '',
     });
@@ -64,7 +60,7 @@ const Registration = () => {
         <h1>User Registration</h1>
         <form onSubmit={handleSubmit} className="registration-form">
 
-          {/* Full Name */}
+  
           <div className="form-group">
             <label htmlFor="fullName">Full Name </label>
             <input
@@ -77,8 +73,6 @@ const Registration = () => {
               placeholder="Enter your full name"
             />
           </div>
-
-          {/* Gender */}
           <div className="form-group">
             <label htmlFor="gender">Gender </label>
             <select
@@ -95,9 +89,8 @@ const Registration = () => {
             </select>
           </div>
 
-          {/* Email */}
           <div className="form-group">
-            <label htmlFor="email">Email ID </label>
+            <label htmlFor="email">Email ID *</label>
             <input
               type="email"
               id="email"
@@ -109,7 +102,6 @@ const Registration = () => {
             />
           </div>
 
-          {/* Username */}
           <div className="form-group">
             <label htmlFor="username">Username </label>
             <input
@@ -123,7 +115,6 @@ const Registration = () => {
             />
           </div>
 
-          {/* Password */}
           <div className="form-group">
             <label htmlFor="password">Password </label>
             <input
@@ -136,11 +127,10 @@ const Registration = () => {
               placeholder="Enter your password"
             />
           </div>
-          
 
-          {/* Preferred Currency */}
+
           <div className="form-group">
-            <label htmlFor="currency">Preferred Currency </label>
+            <label htmlFor="currency">Preferred Currency *</label>
             <select
               id="currency"
               name="currency"
@@ -156,9 +146,8 @@ const Registration = () => {
             </select>
           </div>
 
-          {/* Preferred Language */}
           <div className="form-group">
-            <label htmlFor="language">Preferred Language </label>
+            <label htmlFor="language">Preferred Language *</label>
             <select
               id="language"
               name="language"

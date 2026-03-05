@@ -28,14 +28,15 @@ const UserLogin = () => {
     );
 
     if (user) {
-
+      
       sessionStorage.setItem('isUser', 'true');
-      sessionStorage.setItem('userName', user.username);  
+      sessionStorage.setItem('userName', user.username);   
       sessionStorage.setItem('fullName', user.fullName);
       sessionStorage.setItem('email', user.email);
       sessionStorage.setItem('userId', user.id);
 
-      window.dispatchEvent(new Event('sessionStorageChange'));
+    
+    
 
       setFormData({ username: '', password: '' });
 
