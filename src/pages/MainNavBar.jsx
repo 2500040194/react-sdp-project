@@ -7,6 +7,7 @@ import AdminLogin from "./AdminLogin";
 import UserLogin from "./UserLogin";
 import "./mainnavbar.css";
 
+
 const MainNavBar = () => {
   const [open, setOpen] = useState(false);
 
@@ -27,6 +28,7 @@ const MainNavBar = () => {
         <Link to="/about" onClick={() => setOpen(false)}>About</Link>
         <Link to="/admin-login" onClick={() => setOpen(false)}>Admin Login</Link>
         <Link to="/user-login" onClick={() => setOpen(false)}>User Login</Link>
+       
       </div>
 
       {/* Page Content */}
@@ -37,6 +39,7 @@ const MainNavBar = () => {
           <Route path="/about" element={<About />} />
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/user-login" element={<UserLogin />} />
+  
         </Routes>
       </div>
 

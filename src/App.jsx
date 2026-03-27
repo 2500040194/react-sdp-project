@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import AdminNavBar from "./admin/AdminNavBar";
 import UserNavBar from "./user/UserNavBar";
 import MainNavBar from "./pages/MainNavBar";
+import Report from "./user/Report";
 
 function App() {
 
@@ -38,6 +39,7 @@ function RoleHandler({ role, setRole }) {
   if (role === "admin") return <AdminNavBar />;
   if (role === "user") return <UserNavBar />;
   return <MainNavBar />;
+  <Report/>
 }
 
 export default App;

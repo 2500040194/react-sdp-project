@@ -26,7 +26,7 @@ function ViewUsers() {
               <p><strong>Name:</strong> {user.fullName}</p>
               <p><strong>Username:</strong> {user.username}</p>
               <p><strong>Currency:</strong> {user.currency}</p>
-              <p><strong>Registered At:</strong> {user.registeredAt}</p>
+              <p><strong>Registered At:</strong> {user.registeredAt}</p>          
             </div>
           );
         })
